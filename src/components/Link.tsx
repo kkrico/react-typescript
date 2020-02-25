@@ -5,10 +5,10 @@ interface LinkProps {
     href: string;
 }
 
-const Link: React.FC<LinkProps> = props => {
+const Link: React.FC<LinkProps> = ({ href, className, children }) => {
     return (
-        <a href={props.href} className={props.className}>
-            {props.children}
+        <a href={href} className={className}>
+            {children}
         </a>
     );
 };

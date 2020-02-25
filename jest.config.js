@@ -7,5 +7,6 @@ module.exports = {
     collectCoverage: true,
     coverageReporters: ['html'],
     snapshotSerializers: ['enzyme-to-json/serializer'],
-    setupTestFrameworkScriptFile: '<rootDir>/src/setupTests.ts',
+    setupFilesAfterEnv: ['<rootDir>/__tests__/setupTests.ts'],
+    testPathIgnorePatterns: ['<rootDir>/__tests__/setupTests.ts'],
 };

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import Link from '../src/Link';
+import Link from '../src/components/Link';
 
 describe('Link', () => {
     it('Renders link to Google', () => {

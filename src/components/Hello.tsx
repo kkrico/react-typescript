@@ -7,8 +7,8 @@ export interface HelloProps {
 
 // 'HelloProps' describes the shape of props.
 // State is never set so we use the '{}' type.
-export const Hello: React.FC<HelloProps> = (props: HelloProps) => (
+export const Hello: React.FC<HelloProps> = ({ compiler, framework }: HelloProps) => (
     <h1>
-        Hello from {props.framework} and {props.compiler}
+        Hello from {compiler} and {framework}
     </h1>
 );
