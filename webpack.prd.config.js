@@ -9,7 +9,9 @@ module.exports = {
         // Add '.ts' and '.tsx' as resolvable extensions.
         extensions: ['.ts', '.tsx', '.js', '.jsx'],
     },
-
+    output: {
+        filename: 'bundle-[hash].js',
+    },
     module: {
         rules: [
             {
